@@ -4,7 +4,7 @@ import axios from "axios";
 function App() {
   const [info, setInfo] = useState("");
   const getElements = async () => {
-    const response = await axios.get("http://localhost:4000/bookdata");
+    const response = await axios.get("https://backend-b2up.onrender.com/bookdata");
     console.log(response.data);
     setInfo(JSON.stringify(response.data));
   };
